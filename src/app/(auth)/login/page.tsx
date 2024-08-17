@@ -6,8 +6,7 @@ import { TextField } from '@/components/Fields'
 import { Logo } from '@/components/Logo'
 import { SlimLayout } from '@/components/SlimLayout'
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGoogle} from "@fortawesome/free-brands-svg-icons";
+import GithubLogin from "@/app/(auth)/login/githubLogin";
 
 export const metadata: Metadata = {
   title: 'Sign In',
@@ -35,10 +34,7 @@ export default function Login() {
         for a free trial.
       </p>
 
-      <Button className={"mt-5 gap-4"}>
-        <FontAwesomeIcon icon={faGoogle} size={"xl"} />
-        Login with Google
-      </Button>
+      <GithubLogin />
 
       <form action="#" className="mt-10 grid grid-cols-1 gap-y-8">
         <TextField
